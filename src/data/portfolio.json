@@ -1,0 +1,82 @@
+{
+  "profile": {
+    "name": "Komal Jha",
+    "title": "Full Stack Developer",
+    "tagline": "I build fast, accessible, and beautiful web experiences.",
+    "bio": "I'm a full stack developer who loves turning ideas into clean, functional products. I care about good design, readable code, and shipping things that actually work.",
+    "location": "India",
+    "email": "your.email@example.com",
+    "resumeUrl": "/resume.pdf",
+    "social": {
+      "github": "https://github.com/Jha-Komal",
+      "linkedin": "https://linkedin.com/in/your-profile",
+      "twitter": "https://twitter.com/your-handle"
+    }
+  },
+  "skills": [
+    { "name": "JavaScript", "level": 90 },
+    { "name": "TypeScript", "level": 85 },
+    { "name": "React", "level": 90 },
+    { "name": "Next.js", "level": 85 },
+    { "name": "Node.js", "level": 80 },
+    { "name": "Tailwind CSS", "level": 90 },
+    { "name": "MongoDB", "level": 75 },
+    { "name": "SQL", "level": 70 },
+    { "name": "Git & GitHub", "level": 85 },
+    { "name": "REST APIs", "level": 80 }
+  ],
+  "projects": [
+    {
+      "title": "E-Commerce Platform",
+      "description": "A full-featured online store with cart, checkout, and an admin dashboard for managing products and orders.",
+      "tags": ["Next.js", "TypeScript", "Stripe", "MongoDB"],
+      "gradient": "from-teal-400 to-emerald-600",
+      "liveUrl": "https://example.com",
+      "repoUrl": "https://github.com/Jha-Komal/example-project"
+    },
+    {
+      "title": "Task Management App",
+      "description": "A collaborative task tracker with drag-and-drop boards, real-time updates, and team workspaces.",
+      "tags": ["React", "Node.js", "Socket.io", "PostgreSQL"],
+      "gradient": "from-emerald-400 to-cyan-600",
+      "liveUrl": "https://example.com",
+      "repoUrl": "https://github.com/Jha-Komal/example-project"
+    },
+    {
+      "title": "Weather Dashboard",
+      "description": "A responsive weather app with live forecasts, location search, and interactive charts.",
+      "tags": ["React", "Chart.js", "OpenWeather API"],
+      "gradient": "from-cyan-400 to-teal-600",
+      "liveUrl": "https://example.com",
+      "repoUrl": "https://github.com/Jha-Komal/example-project"
+    },
+    {
+      "title": "Personal Blog Platform",
+      "description": "A markdown-powered blogging platform with a custom CMS, tags, and full-text search.",
+      "tags": ["Next.js", "MDX", "Tailwind CSS"],
+      "gradient": "from-green-400 to-emerald-600",
+      "liveUrl": "https://example.com",
+      "repoUrl": "https://github.com/Jha-Komal/example-project"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Engineer",
+      "company": "Tech Company Inc.",
+      "duration": "Jan 2024 - Present",
+      "description": "Building and maintaining scalable web applications, collaborating with designers and backend engineers to ship new features."
+    },
+    {
+      "role": "Frontend Developer Intern",
+      "company": "Startup Labs",
+      "duration": "Jun 2023 - Dec 2023",
+      "description": "Developed responsive UI components and improved page load performance by 30% through code splitting and image optimization."
+    },
+    {
+      "role": "Freelance Web Developer",
+      "company": "Self-employed",
+      "duration": "2022 - 2023",
+      "description": "Delivered custom websites for small businesses, handling everything from design to deployment."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+import type { Experience as ExperienceItem } from "@/data/types";
+import SectionHeading from "./SectionHeading";
+
+export default function Experience({ experience }: { experience: ExperienceItem[] }) {
+  return (
+    <section id="experience" className="px-6 py-20">
+      <div className="mx-auto max-w-3xl">
+        <SectionHeading eyebrow="Where I've Worked" title="Experience" />
+        <ol className="relative border-s border-white/10 ps-8">
+          {experience.map((item) => (
+            <li key={`${item.company}-${item.duration}`} className="mb-10 last:mb-0">
+              <span className="absolute -start-[7px] mt-1.5 h-3.5 w-3.5 rounded-full bg-gradient-to-br from-teal-400 to-emerald-500" />
+              <p className="text-xs font-semibold uppercase tracking-wide text-emerald-400">
+                {item.duration}
+              </p>
+              <h3 className="mt-1 text-lg font-bold text-white">{item.role}</h3>
+              <p className="text-sm font-medium text-white/60">{item.company}</p>
+              <p className="mt-2 text-sm leading-relaxed text-white/60">{item.description}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  );
+}
