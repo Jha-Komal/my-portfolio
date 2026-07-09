@@ -75,13 +75,13 @@
       "linkLabel": "Read Teardown"
     },
     {
-      "title": "AI PRD Generator",
-      "subtitle": "Self-built PM Productivity Tool · 2026",
-      "description": "Built an AI-powered PRD generator to eliminate blank-page friction in requirements writing. Takes a feature brief, persona, and success metrics as input, and outputs a structured 10-section PRD with user stories, scope, risks, and open questions.",
-      "tags": ["AI Tools", "PRD", "0→1"],
+      "title": "Ally",
+      "subtitle": "Study Abroad & Career Coaching Platform",
+      "description": "An AI-powered career coaching product helping students find the right university abroad with full transparency and trust — cutting through biased counselling to surface honest, personalized guidance.",
+      "tags": ["EdTech", "Career Coaching", "AI"],
       "gradient": "from-emerald-400 to-cyan-600",
-      "link": null,
-      "linkLabel": null
+      "link": "https://ally-study-abroad-ai.vercel.app/",
+      "linkLabel": "Visit Ally"
     },
     {
       "title": "Morning Ritual Content App",
