@@ -13,30 +13,39 @@ export interface Profile {
   };
 }
 
-export interface Skill {
-  name: string;
-  level: number;
+export interface SkillGroup {
+  category: string;
+  items: string[];
 }
 
 export interface Project {
   title: string;
+  subtitle: string;
   description: string;
   tags: string[];
   gradient: string;
-  liveUrl: string;
-  repoUrl: string;
+  link: string | null;
+  linkLabel: string | null;
 }
 
 export interface Experience {
   role: string;
   company: string;
+  location: string;
   duration: string;
-  description: string;
+  highlights: string[];
+}
+
+export interface Education {
+  degree: string;
+  institution: string;
+  year: string;
 }
 
 export interface PortfolioData {
   profile: Profile;
-  skills: Skill[];
+  skills: SkillGroup[];
   projects: Project[];
   experience: Experience[];
+  education: Education[];
 }

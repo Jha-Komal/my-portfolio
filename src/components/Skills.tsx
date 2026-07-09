@@ -1,23 +1,26 @@
-import type { Skill } from "@/data/types";
+import type { SkillGroup } from "@/data/types";
 import SectionHeading from "./SectionHeading";
 
-export default function Skills({ skills }: { skills: Skill[] }) {
+export default function Skills({ skills }: { skills: SkillGroup[] }) {
   return (
     <section id="skills" className="px-6 py-20">
-      <div className="mx-auto max-w-5xl">
-        <SectionHeading eyebrow="What I Know" title="Skills" />
-        <div className="grid grid-cols-1 gap-x-10 gap-y-6 sm:grid-cols-2">
-          {skills.map((skill) => (
-            <div key={skill.name}>
-              <div className="mb-2 flex items-center justify-between text-sm">
-                <span className="font-medium text-white/90">{skill.name}</span>
-                <span className="text-white/50">{skill.level}%</span>
-              </div>
-              <div className="h-2 w-full overflow-hidden rounded-full bg-white/5">
-                <div
-                  className="h-full rounded-full bg-gradient-to-r from-teal-400 to-emerald-500"
-                  style={{ width: `${skill.level}%` }}
-                />
+      <div className="mx-auto max-w-4xl">
+        <SectionHeading eyebrow="What I Bring" title="Skills" />
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          {skills.map((group) => (
+            <div key={group.category}>
+              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-emerald-400">
+                {group.category}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-white/80 transition-colors hover:border-emerald-400/40 hover:text-emerald-200"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
             </div>
           ))}

@@ -13,6 +13,9 @@ function ProjectCard({ project }: { project: Project }) {
         />
         <div className="relative flex flex-1 flex-col">
           <h3 className="text-xl font-bold text-white">{project.title}</h3>
+          <p className="mt-1 text-xs font-medium uppercase tracking-wide text-emerald-400">
+            {project.subtitle}
+          </p>
           <p className="mt-3 flex-1 text-sm leading-relaxed text-white/60">
             {project.description}
           </p>
@@ -26,24 +29,18 @@ function ProjectCard({ project }: { project: Project }) {
               </span>
             ))}
           </div>
-          <div className="mt-6 flex gap-4 text-sm font-semibold">
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-emerald-300 transition-colors hover:text-emerald-200"
-            >
-              Live Demo →
-            </a>
-            <a
-              href={project.repoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/50 transition-colors hover:text-white/80"
-            >
-              Source Code
-            </a>
-          </div>
+          {project.link && (
+            <div className="mt-6 text-sm font-semibold">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 transition-colors hover:text-emerald-200"
+              >
+                {project.linkLabel ?? "View"} →
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>

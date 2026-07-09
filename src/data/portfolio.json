@@ -1,10 +1,10 @@
 {
   "profile": {
-    "name": "Komal Jha",
-    "title": "Full Stack Developer",
-    "tagline": "I build fast, accessible, and beautiful web experiences.",
-    "bio": "I'm a full stack developer who loves turning ideas into clean, functional products. I care about good design, readable code, and shipping things that actually work.",
-    "location": "India",
+    "name": "Komal Kumari",
+    "title": "Product Manager",
+    "tagline": "Growth-focused Digital Product Manager turning customer insights into measurable product outcomes.",
+    "bio": "Growth-focused Digital Product Manager with 3+ years of experience owning product roadmaps, driving end-to-end feature delivery, and translating customer and business insights into measurable outcomes. Launched a women's wellness app from 0→1 and shipped CRM-led digital products at QuantumLeap, defining vision, writing PRDs, prioritizing backlogs, and partnering with engineering in Agile sprint cycles. Proven ability to identify user drop-off through funnel analytics, integrate fintech partners, and scale impact through data-driven iteration.",
+    "location": "Bengaluru, India",
     "email": "your.email@example.com",
     "resumeUrl": "/resume.pdf",
     "social": {
@@ -14,69 +14,130 @@
     }
   },
   "skills": [
-    { "name": "JavaScript", "level": 90 },
-    { "name": "TypeScript", "level": 85 },
-    { "name": "React", "level": 90 },
-    { "name": "Next.js", "level": 85 },
-    { "name": "Node.js", "level": 80 },
-    { "name": "Tailwind CSS", "level": 90 },
-    { "name": "MongoDB", "level": 75 },
-    { "name": "SQL", "level": 70 },
-    { "name": "Git & GitHub", "level": 85 },
-    { "name": "REST APIs", "level": 80 }
+    {
+      "category": "Product",
+      "items": [
+        "Roadmap & Vision",
+        "PRD & User Story Writing",
+        "Backlog Prioritization",
+        "Product Lifecycle",
+        "0→1 Development",
+        "MVP Prioritization",
+        "User Research",
+        "Agile/Scrum",
+        "Sprint Planning"
+      ]
+    },
+    {
+      "category": "Analytics",
+      "items": [
+        "Funnel & Cohort Analysis",
+        "Customer Journey Mapping",
+        "KPI Tracking",
+        "Hypothesis Testing",
+        "Market & Competitor Analysis"
+      ]
+    },
+    {
+      "category": "Tools",
+      "items": [
+        "Jira",
+        "Confluence",
+        "Figma",
+        "Balsamiq",
+        "Google Analytics",
+        "Mixpanel",
+        "Zoho CRM",
+        "LeadSquared",
+        "SQL",
+        "Excel",
+        "Notion"
+      ]
+    },
+    {
+      "category": "Soft Skills",
+      "items": [
+        "Cross-functional Collaboration",
+        "Stakeholder Management",
+        "People Management",
+        "Structured Problem-Solving"
+      ]
+    }
   ],
   "projects": [
     {
-      "title": "E-Commerce Platform",
-      "description": "A full-featured online store with cart, checkout, and an admin dashboard for managing products and orders.",
-      "tags": ["Next.js", "TypeScript", "Stripe", "MongoDB"],
+      "title": "Subspace.money",
+      "subtitle": "Product Teardown · May 2026",
+      "description": "End-to-end teardown of a consumer fintech app — analysed onboarding flow, payment UX, and post-transaction trust failures across the full user journey. Diagnosed UX trust breakdown (blank post-payment screen, unlabelled wallet deduction) and recommended tiered fixes prioritized by sprint capacity before GTM.",
+      "tags": ["Product Teardown", "Fintech", "UX Audit"],
       "gradient": "from-teal-400 to-emerald-600",
-      "liveUrl": "https://example.com",
-      "repoUrl": "https://github.com/Jha-Komal/example-project"
+      "link": null,
+      "linkLabel": null
     },
     {
-      "title": "Task Management App",
-      "description": "A collaborative task tracker with drag-and-drop boards, real-time updates, and team workspaces.",
-      "tags": ["React", "Node.js", "Socket.io", "PostgreSQL"],
+      "title": "AI PRD Generator",
+      "subtitle": "Self-built PM Productivity Tool · 2026",
+      "description": "Built an AI-powered PRD generator to eliminate blank-page friction in requirements writing. Takes a feature brief, persona, and success metrics as input, and outputs a structured 10-section PRD with user stories, scope, risks, and open questions.",
+      "tags": ["AI Tools", "PRD", "0→1"],
       "gradient": "from-emerald-400 to-cyan-600",
-      "liveUrl": "https://example.com",
-      "repoUrl": "https://github.com/Jha-Komal/example-project"
+      "link": null,
+      "linkLabel": null
     },
     {
-      "title": "Weather Dashboard",
-      "description": "A responsive weather app with live forecasts, location search, and interactive charts.",
-      "tags": ["React", "Chart.js", "OpenWeather API"],
+      "title": "Morning Ritual Content App",
+      "subtitle": "Founder · 2026 – Present",
+      "description": "Building a daily 5-card content app, validated via WhatsApp broadcast before committing to a PWA build. Conducted 10 user interviews to map ritual patterns and translate insights into product architecture.",
+      "tags": ["Content App", "0→1", "User Research"],
       "gradient": "from-cyan-400 to-teal-600",
-      "liveUrl": "https://example.com",
-      "repoUrl": "https://github.com/Jha-Komal/example-project"
-    },
-    {
-      "title": "Personal Blog Platform",
-      "description": "A markdown-powered blogging platform with a custom CMS, tags, and full-text search.",
-      "tags": ["Next.js", "MDX", "Tailwind CSS"],
-      "gradient": "from-green-400 to-emerald-600",
-      "liveUrl": "https://example.com",
-      "repoUrl": "https://github.com/Jha-Komal/example-project"
+      "link": null,
+      "linkLabel": null
     }
   ],
   "experience": [
     {
-      "role": "Software Engineer",
-      "company": "Tech Company Inc.",
-      "duration": "Jan 2024 - Present",
-      "description": "Building and maintaining scalable web applications, collaborating with designers and backend engineers to ship new features."
+      "role": "Digital Product Manager & Co-Founder",
+      "company": "Shyne — Women's Wellness App",
+      "location": "Bengaluru",
+      "duration": "Feb 2026 – Present",
+      "highlights": [
+        "Defined product vision from scratch through market analysis, competitor benchmarking (Flo, Clue), and user interviews to identify gaps and define user personas.",
+        "Led MVP prioritization; built low-fidelity wireframes in Balsamiq and high-fidelity designs in Figma; collaborated with the tech team on feature timelines and delivery scope.",
+        "Managed end-to-end product lifecycle from requirements through design handoff and sprint planning — app live on Play Store with 100+ downloads."
+      ]
     },
     {
-      "role": "Frontend Developer Intern",
-      "company": "Startup Labs",
-      "duration": "Jun 2023 - Dec 2023",
-      "description": "Developed responsive UI components and improved page load performance by 30% through code splitting and image optimization."
+      "role": "Product Manager — CRM & Digital Funnel Systems",
+      "company": "QuantumLeap Learning Solutions",
+      "location": "Bengaluru",
+      "duration": "Jan 2024 – Feb 2026",
+      "highlights": [
+        "Owned product roadmap for CRM-integrated funnel systems — defined vision, prioritized backlog by revenue impact, authored PRDs and user stories for engineering delivery.",
+        "Generated ₹30–40L incremental monthly revenue, contributing to team revenue of ₹1.5 Cr/month; validated impact and presented to leadership for scale approval.",
+        "Identified critical 90% user drop-off from 300 daily opt-ins to 35 applications via funnel analytics — translated into a structured intervention roadmap.",
+        "Drove 10–15% uplift in daily booked calls by designing reactivation workflows with dialer automation and CRM lead-routing logic.",
+        "Led 0→1 integration of fintech lending partners (Eduvanz, Northern Arc) to resolve core cash collection bottlenecks — defined the user onboarding flow, improving cash collection from 35% to 70%.",
+        "Defined requirements for an AI-powered lead scoring system — designed scoring logic across 14 form fields, specified weightage and verdict output; improved sales follow-up efficiency and drove 10% uplift in conversion."
+      ]
     },
     {
-      "role": "Freelance Web Developer",
-      "company": "Self-employed",
-      "duration": "2022 - 2023",
-      "description": "Delivered custom websites for small businesses, handling everything from design to deployment."
+      "role": "Product Associate — 0→1 Monetization",
+      "company": "QuantumLeap Learning Solutions",
+      "location": "Bengaluru",
+      "duration": "Jan 2023 – Jan 2024",
+      "highlights": [
+        "Led 0→1 discovery and launch of a mid-tier product — defined customer journey, designed pricing tiers, owned conversion tracking from pilot to scale.",
+        "Identified 25–30% drop-off among high-intent leads; validated pricing friction hypothesis through structured customer interviews.",
+        "Designed MVP cohort experiment with offer positioning, pricing tiers, and A/B tracking; operationalized cross-functionally from pilot to scale.",
+        "Built pre-sales engine from scratch — designed lead scoring framework, qualification workflows, and routing logic for a new revenue vertical.",
+        "Trained and managed 4–5 associates; introduced KPI dashboards for pipeline performance and sales visibility."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Arts (Honours)",
+      "institution": "M.N.D College, Indi",
+      "year": "2022"
     }
   ]
 }
