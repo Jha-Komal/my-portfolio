@@ -71,8 +71,8 @@
       "description": "End-to-end teardown of a consumer fintech app — analysed onboarding flow, payment UX, and post-transaction trust failures across the full user journey. Diagnosed UX trust breakdown (blank post-payment screen, unlabelled wallet deduction) and recommended tiered fixes prioritized by sprint capacity before GTM.",
       "tags": ["Product Teardown", "Fintech", "UX Audit"],
       "gradient": "from-teal-400 to-emerald-600",
-      "link": null,
-      "linkLabel": null
+      "link": "https://docs.google.com/document/d/1ss_E7sWYNpPZlc1K9nEDFtr56SxZZzQD1sZGy5-knRY/edit?tab=t.0",
+      "linkLabel": "Read Teardown"
     },
     {
       "title": "AI PRD Generator",
