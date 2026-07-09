@@ -9,7 +9,6 @@ export interface Profile {
   social: {
     github: string;
     linkedin: string;
-    twitter: string;
   };
 }
 

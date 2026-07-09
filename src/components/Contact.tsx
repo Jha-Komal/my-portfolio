@@ -26,9 +26,6 @@ export default function Contact({ profile }: { profile: Profile }) {
           <a href={profile.social.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-300">
             LinkedIn
           </a>
-          <a href={profile.social.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-300">
-            Twitter
-          </a>
         </div>
       </div>
     </section>
