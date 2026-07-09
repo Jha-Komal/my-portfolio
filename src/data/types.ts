@@ -35,16 +35,9 @@ export interface Experience {
   highlights: string[];
 }
 
-export interface Education {
-  degree: string;
-  institution: string;
-  year: string;
-}
-
 export interface PortfolioData {
   profile: Profile;
   skills: SkillGroup[];
   projects: Project[];
   experience: Experience[];
-  education: Education[];
 }
