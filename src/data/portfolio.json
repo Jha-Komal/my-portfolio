@@ -65,31 +65,40 @@
   ],
   "projects": [
     {
+      "title": "Google Photos: Memory Trail",
+      "subtitle": "Product Discovery · AI-Native MVP",
+      "description": "Users often remember a moment but not its date, place or details, and stall when the first search fails. Using public-review analysis, a 31-response survey, six task-based interviews and live retrieval replays, I framed the core problem as recovery after a failed first search, then designed Memory Trail: an AI-native concept that keeps clues and near-matches so users narrow results without starting over. In a three-user seeded test, all three recovered their target after the first attempt failed; this is directional evidence, not proof of improved retrieval in real libraries.",
+      "tags": ["Product Discovery", "User Research", "AI-Native MVP", "Search & Discovery"],
+      "gradient": "from-blush to-lavender",
+      "link": "https://docs.google.com/presentation/d/12mNxwqFPTn8Cet7wAnNqhGkoUoEzPecThyYjDGBEP2k/edit?usp=sharing",
+      "linkLabel": "View Case Study"
+    },
+    {
+      "title": "Blinkit: Contextual Category Discovery",
+      "subtitle": "Product Strategy · Growth & Experimentation",
+      "description": "Frequent Blinkit shoppers keep buying the same familiar items and rarely explore new categories. I studied the existing discovery surfaces and the friction behind repeat-purchase behaviour, then proposed an AI-powered contextual add-on: it infers the shopper's likely mission from their basket, recommends one relevant item with a clear reason, and lets them accept or ignore it without slowing checkout. The success framework pairs a north-star metric (share of eligible checkouts where a new-category item is bought) with guardrails on checkout time, cart abandonment and relevance.",
+      "tags": ["Product Strategy", "Quick Commerce", "Growth & Experimentation", "AI Recommendations"],
+      "gradient": "from-peach to-blush",
+      "link": "https://docs.google.com/presentation/d/1T5MaAMLffBdH-_6l5EIKYTt-q_3Nlv40nxDw1gdWedI/edit?usp=sharing",
+      "linkLabel": "View Case Study"
+    },
+    {
+      "title": "Myntra: Wishlist Conversion",
+      "subtitle": "Product Discovery · AI-Powered Product Development",
+      "description": "High-intent Myntra shoppers save several products for one need, then stall because the comparison is spread across product pages. I combined an AI analysis of 2,055 public conversations with a 20-person survey and 6 interviews to find the root cause, then proposed Help Me Choose: a Wishlist workspace that resolves a 2–4 item shortlist around the shopper's own priorities, with no discounts. The case study covers prioritization, a metrics hierarchy with guardrails, and an experiment plan; no results are claimed.",
+      "tags": ["Product Discovery", "User Research", "AI-Powered", "Metrics & Experimentation"],
+      "gradient": "from-lavender to-blush",
+      "link": "/projects/myntra-wishlist",
+      "linkLabel": "Read Case Study"
+    },
+    {
       "title": "Subspace.money",
       "subtitle": "Product Teardown · May 2026",
       "description": "End-to-end teardown of a consumer fintech app — analysed onboarding flow, payment UX, and post-transaction trust failures across the full user journey. Diagnosed UX trust breakdown (blank post-payment screen, unlabelled wallet deduction) and recommended tiered fixes prioritized by sprint capacity before GTM.",
       "tags": ["Product Teardown", "Fintech", "UX Audit"],
-      "gradient": "from-teal-400 to-emerald-600",
+      "gradient": "from-peach to-terracotta",
       "link": "https://docs.google.com/document/d/1ss_E7sWYNpPZlc1K9nEDFtr56SxZZzQD1sZGy5-knRY/edit?tab=t.0",
       "linkLabel": "Read Teardown"
-    },
-    {
-      "title": "Ally",
-      "subtitle": "Study Abroad & Career Coaching Platform",
-      "description": "An AI-powered career coaching product helping students find the right university abroad with full transparency and trust — cutting through biased counselling to surface honest, personalized guidance.",
-      "tags": ["EdTech", "Career Coaching", "AI"],
-      "gradient": "from-emerald-400 to-cyan-600",
-      "link": "https://ally-study-abroad-ai.vercel.app/",
-      "linkLabel": "Visit Ally"
-    },
-    {
-      "title": "Morning Ritual Content App",
-      "subtitle": "Founder · 2026 – Present",
-      "description": "Building a daily 5-card content app, validated via WhatsApp broadcast before committing to a PWA build. Conducted 10 user interviews to map ritual patterns and translate insights into product architecture.",
-      "tags": ["Content App", "0→1", "User Research"],
-      "gradient": "from-cyan-400 to-teal-600",
-      "link": null,
-      "linkLabel": null
     }
   ],
   "experience": [
