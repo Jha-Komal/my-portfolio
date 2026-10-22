@@ -16,11 +16,14 @@ export default function JourneyStepper({ steps }: { steps: Step[] }) {
 
   return (
     <div>
-      <ol className="grid gap-3 sm:grid-cols-5">
+      <ol className="grid grid-cols-2 gap-3 sm:grid-cols-5">
         {steps.map((item, index) => {
           const selected = index === active;
           return (
-            <li key={item.label} className="relative">
+            <li
+              key={item.label}
+              className={`relative ${index === steps.length - 1 ? "col-span-2 sm:col-span-1" : ""}`}
+            >
               <button
                 type="button"
                 aria-pressed={selected}

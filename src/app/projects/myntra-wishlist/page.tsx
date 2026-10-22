@@ -133,7 +133,7 @@ export default function MyntraWishlistCaseStudy() {
               discounts, cashback or other incentives.
             </p>
 
-            <div className="mx-auto mt-10 grid max-w-3xl gap-4 text-left sm:grid-cols-3">
+            <div className="mx-auto mt-10 grid max-w-3xl grid-cols-3 gap-2 text-left sm:gap-4">
               <StatTile value="2,055" label="public conversations analysed with AI" />
               <StatTile value="20" label="survey responses" />
               <StatTile value="6" label="user interviews" />
