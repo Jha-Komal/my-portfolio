@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 export default function SectionHeading({
   eyebrow,
   title,
@@ -6,12 +8,12 @@ export default function SectionHeading({
   title: string;
 }) {
   return (
-    <div className="mb-12 text-center">
-      <p className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-400">
+    <Reveal className="mb-12 text-center">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-terracotta-deep">
         {eyebrow}
       </p>
-      <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">{title}</h2>
-      <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-teal-400 to-emerald-500" />
-    </div>
+      <h2 className="mt-3 text-3xl font-bold tracking-tight text-ink sm:text-4xl">{title}</h2>
+      <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-peach to-blush" />
+    </Reveal>
   );
 }

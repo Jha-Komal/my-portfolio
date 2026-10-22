@@ -1,33 +1,256 @@
 @import "tailwindcss";
 
 :root {
-  --background: #04120f;
-  --foreground: #e6fff8;
+  --background: #ffe3b8;
+  --foreground: #2a2f36;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: #ffe3b8;
+  --color-peach: #ffc9a0;
+  --color-blush: #f2b8c6;
+  --color-lavender: #b9a6d6;
+  --color-sage: #8fa98b;
+  --color-terracotta: #c8643c;
+  --color-terracotta-deep: #a9502b;
+  --color-ink: #2a2f36;
+  --font-sans: var(--font-nunito);
 }
 
 body {
-  background: var(--background);
+  overflow-x: clip;
+  background-color: var(--background);
+  background-image: linear-gradient(180deg, #ffe3b8 0%, #ffc9a0 45%, #f2b8c6 80%, #d9cbe6 100%);
+  background-attachment: fixed;
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito), Arial, Helvetica, sans-serif;
 }
 
-.text-gradient {
-  background-image: linear-gradient(90deg, #2dd4bf, #10b981);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+/* Drifting clouds behind all content */
+.sky {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
 }
 
-.glow-grid {
-  background-image:
-    radial-gradient(circle at 15% 10%, rgba(45, 212, 191, 0.18), transparent 40%),
-    radial-gradient(circle at 85% 0%, rgba(16, 185, 129, 0.15), transparent 45%),
-    radial-gradient(circle at 50% 100%, rgba(45, 212, 191, 0.12), transparent 45%);
+.cloud {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  animation: drift 40s ease-in-out infinite alternate;
+}
+
+.cloud-1 { top: 8%; left: -10%; width: 38rem; height: 14rem; background: rgba(255, 255, 255, 0.45); }
+.cloud-2 { top: 40%; right: -12%; width: 42rem; height: 16rem; background: rgba(185, 166, 214, 0.45); animation-duration: 55s; }
+.cloud-3 { bottom: -4%; left: 10%; width: 36rem; height: 14rem; background: rgba(242, 184, 198, 0.55); animation-duration: 48s; }
+
+/* Foggy parallax forest */
+.trees {
+  position: absolute;
+  inset: 0;
+}
+
+.tree-layer {
+  position: absolute;
+  left: -2%;
+  right: -2%;
+  bottom: -6vh;
+  height: 55vh;
+}
+
+/* Fog drifting at the base of each tree row */
+.fog {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60%;
+  background: linear-gradient(0deg, rgba(255, 240, 225, 0.95) 0%, rgba(255, 240, 225, 0) 100%);
+  animation: fog-sway 30s ease-in-out infinite alternate;
+}
+
+.fog-2 { animation-duration: 38s; }
+.fog-3 { animation-duration: 46s; }
+
+@keyframes fog-sway {
+  from { transform: translateX(-2%); }
+  to { transform: translateX(2%); }
+}
+
+@keyframes drift {
+  from { transform: translateX(-3rem); }
+  to { transform: translateX(3rem); }
+}
+
+/* Dandelion seeds in the hero */
+.seed {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.6);
+  animation: float 9s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-18px); }
+}
+
+.glass {
+  position: relative;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0.22) 45%, rgba(255, 255, 255, 0.38) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow:
+    0 14px 40px -14px rgba(169, 80, 43, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 0 28px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(22px) saturate(1.6);
+  -webkit-backdrop-filter: blur(22px) saturate(1.6);
+}
+
+/* Diagonal specular streak across the glass */
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 20%, rgba(255, 255, 255, 0.5) 30%, transparent 42%);
+  opacity: 0.7;
+}
+
+/* Smooth anchor scrolling, offset for the sticky navbar */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+/* Cat cursors */
+html {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2236%22 height=%2236%22 viewBox=%220 0 36 36%22%3E%3Cg stroke=%22%232A2F36%22 stroke-width=%221.6%22 stroke-linejoin=%22round%22 stroke-linecap=%22round%22%3E%3Cpath d=%22M5 15 4 3 14 8ZM31 15 32 3 22 8Z%22 fill=%22%23FFD9B0%22/%3E%3Cellipse cx=%2218%22 cy=%2220%22 rx=%2214%22 ry=%2212.5%22 fill=%22%23FFD9B0%22/%3E%3Cpath d=%22M7.5 6.5 6.8 10.5 10.5 8.6ZM28.5 6.5 29.2 10.5 25.5 8.6Z%22 fill=%22%23F2B8C6%22 stroke=%22none%22/%3E%3Ccircle cx=%2212.5%22 cy=%2218.5%22 r=%221.7%22 fill=%22%232A2F36%22 stroke=%22none%22/%3E%3Ccircle cx=%2223.5%22 cy=%2218.5%22 r=%221.7%22 fill=%22%232A2F36%22 stroke=%22none%22/%3E%3Cpath d=%22M16.4 22.2h3.2l-1.6 2Z%22 fill=%22%23F2B8C6%22/%3E%3Cpath d=%22M18 24.2v1.2M15.5 26.4c1.2.9 2.3.9 2.5-1M18 25.4c.2 1.9 1.3 1.9 2.5 1%22 fill=%22none%22/%3E%3Cpath d=%22M2 20.5 8 21.5M2 25 8 23.8M34 20.5 28 21.5M34 25 28 23.8%22 fill=%22none%22 stroke-width=%221.2%22/%3E%3C/g%3E%3C/svg%3E") 18 18, auto;
+}
+
+a,
+button,
+[role="button"],
+summary {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2238%22 height=%2238%22 viewBox=%220 0 38 38%22%3E%3Cg fill=%22%23fff%22 stroke=%22%23fff%22 stroke-width=%225%22 stroke-linejoin=%22round%22%3E%3Crect x=%2211%22 y=%223%22 width=%226%22 height=%2217%22 rx=%223%22/%3E%3Crect x=%228%22 y=%2214%22 width=%2219%22 height=%2215%22 rx=%226.5%22/%3E%3Cellipse cx=%227.5%22 cy=%2220.5%22 rx=%223.2%22 ry=%225.5%22 transform=%22rotate(-28 7.5 20.5)%22/%3E%3Crect x=%2211%22 y=%2228%22 width=%2213%22 height=%225.5%22 rx=%222.2%22/%3E%3C/g%3E%3Cg fill=%22%23FFD9B0%22 stroke=%22%232A2F36%22 stroke-width=%221.6%22 stroke-linejoin=%22round%22%3E%3Crect x=%2211%22 y=%223%22 width=%226%22 height=%2217%22 rx=%223%22/%3E%3Crect x=%228%22 y=%2214%22 width=%2219%22 height=%2215%22 rx=%226.5%22/%3E%3Cellipse cx=%227.5%22 cy=%2220.5%22 rx=%223.2%22 ry=%225.5%22 transform=%22rotate(-28 7.5 20.5)%22/%3E%3C/g%3E%3Crect x=%2211%22 y=%2228%22 width=%2213%22 height=%225.5%22 rx=%222.2%22 fill=%22%23C8643C%22 stroke=%22%232A2F36%22 stroke-width=%221.6%22/%3E%3Cg fill=%22%23FFD9B0%22%3E%3Crect x=%2211%22 y=%223%22 width=%226%22 height=%2217%22 rx=%223%22/%3E%3Crect x=%228%22 y=%2214%22 width=%2219%22 height=%2215%22 rx=%226.5%22/%3E%3Cellipse cx=%227.5%22 cy=%2220.5%22 rx=%223.2%22 ry=%225.5%22 transform=%22rotate(-28 7.5 20.5)%22/%3E%3C/g%3E%3Cpath d=%22M17.2 18.5v4M21 19v3.4M24.4 20v2.6%22 fill=%22none%22 stroke=%22%232A2F36%22 stroke-width=%221.2%22 stroke-linecap=%22round%22 opacity=%22.55%22/%3E%3Cellipse cx=%2214%22 cy=%229%22 rx=%221%22 ry=%223.2%22 fill=%22%23fff%22 opacity=%22.7%22/%3E%3C/svg%3E") 14 3, pointer;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translate(var(--rx, 0), var(--ry, 28px));
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-left {
+  --rx: -90px;
+  --ry: 0;
+}
+
+.reveal-right {
+  --rx: 90px;
+  --ry: 0;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero entrance: stagger with animation-delay */
+.rise {
+  opacity: 0;
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Paper plane gliding across the hero */
+.plane {
+  position: absolute;
+  top: 22%;
+  left: -8%;
+  width: 56px;
+  opacity: 0.85;
+  animation: glide 26s linear infinite;
+}
+
+@keyframes glide {
+  0% { transform: translate(0, 0) rotate(8deg); }
+  50% { transform: translate(60vw, -40px) rotate(-4deg); }
+  100% { transform: translate(120vw, 20px) rotate(8deg); }
+}
+
+/* Nav underline slide */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  background: var(--color-terracotta);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.glass {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 20px 46px -14px rgba(169, 80, 43, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 0 28px rgba(255, 255, 255, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .cloud,
+  .fog,
+  .seed,
+  .plane,
+  .rise {
+    animation: none;
+    opacity: 1;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .glass:hover {
+    transform: none;
+  }
 }
