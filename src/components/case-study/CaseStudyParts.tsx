@@ -56,9 +56,9 @@ export function Callout({ children }: { children: ReactNode }) {
 
 export function StatTile({ value, label }: { value: string; label: string }) {
   return (
-    <div className="glass rounded-2xl p-5 text-center">
-      <p className="text-3xl font-extrabold text-terracotta-deep sm:text-4xl">{value}</p>
-      <p className="mt-1 text-sm font-semibold text-ink/75">{label}</p>
+    <div className="glass rounded-2xl p-3 text-center sm:p-5">
+      <p className="text-2xl font-extrabold text-terracotta-deep sm:text-4xl">{value}</p>
+      <p className="mt-1 text-xs font-semibold leading-snug text-ink/75 sm:text-sm">{label}</p>
     </div>
   );
 }
@@ -80,8 +80,33 @@ export function OptionMatrix({ options }: { options: Option[] }) {
   ];
 
   return (
-    <div className="glass overflow-x-auto rounded-3xl p-2 sm:p-4">
-      <table className="w-full min-w-[640px] border-separate border-spacing-2 text-left text-sm">
+    <>
+    <div className="space-y-4 md:hidden">
+      {options.map((option) => (
+        <div
+          key={option.name}
+          className={`glass rounded-3xl p-5 ${option.chosen ? "!bg-peach/50 ring-2 ring-terracotta" : ""}`}
+        >
+          <p className="text-xs font-bold uppercase tracking-wide text-terracotta-deep">
+            {option.name}
+            {option.chosen && " · Advanced"}
+          </p>
+          <h3 className="mt-1 text-lg font-extrabold text-ink">{option.title}</h3>
+          <dl className="mt-3 space-y-3">
+            {rows.map((row) => (
+              <div key={row.key}>
+                <dt className="text-xs font-bold uppercase tracking-wide text-ink/60">
+                  {row.label}
+                </dt>
+                <dd className="mt-0.5 text-sm leading-relaxed text-ink/85">{option[row.key]}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      ))}
+    </div>
+    <div className="glass hidden overflow-x-auto rounded-3xl p-2 sm:p-4 md:block">
+      <table className="w-full border-separate border-spacing-2 text-left text-sm">
         <caption className="sr-only">
           Comparison of three Wishlist interventions against the research-supported root cause
         </caption>
@@ -133,6 +158,7 @@ export function OptionMatrix({ options }: { options: Option[] }) {
         </tbody>
       </table>
     </div>
+    </>
   );
 }
 

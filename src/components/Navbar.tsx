@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const links = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
@@ -7,6 +11,8 @@ const links = [
 ];
 
 export default function Navbar({ name }: { name: string }) {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 border-b border-white/60 bg-cream/70 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -22,7 +28,52 @@ export default function Navbar({ name }: { name: string }) {
             </li>
           ))}
         </ul>
+        <button
+          type="button"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          aria-controls="mobile-menu"
+          onClick={() => setOpen((value) => !value)}
+          className="flex h-11 w-11 items-center justify-center rounded-full text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terracotta sm:hidden"
+        >
+          <span className="relative block h-3.5 w-6" aria-hidden="true">
+            <span
+              className={`absolute left-0 h-0.5 w-6 rounded-full bg-ink transition-all duration-300 ${
+                open ? "top-1.5 rotate-45" : "top-0"
+              }`}
+            />
+            <span
+              className={`absolute left-0 top-1.5 h-0.5 w-6 rounded-full bg-ink transition-opacity duration-200 ${
+                open ? "opacity-0" : "opacity-100"
+              }`}
+            />
+            <span
+              className={`absolute left-0 h-0.5 w-6 rounded-full bg-ink transition-all duration-300 ${
+                open ? "top-1.5 -rotate-45" : "top-3"
+              }`}
+            />
+          </span>
+        </button>
       </nav>
+      <ul
+        id="mobile-menu"
+        className={`overflow-hidden px-6 text-base font-semibold text-ink transition-[max-height,padding] duration-300 sm:hidden ${
+          open ? "max-h-96 pb-4" : "max-h-0"
+        }`}
+      >
+        {links.map((link) => (
+          <li key={link.href}>
+            <a
+              href={link.href}
+              tabIndex={open ? 0 : -1}
+              onClick={() => setOpen(false)}
+              className="block rounded-xl px-3 py-3 hover:bg-white/50 hover:text-terracotta-deep"
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
     </header>
   );
 }
