@@ -3,17 +3,21 @@ import Reveal from "./Reveal";
 export default function SectionHeading({
   eyebrow,
   title,
+  action,
 }: {
   eyebrow: string;
   title: string;
+  action?: React.ReactNode;
 }) {
   return (
-    <Reveal className="mb-12 text-center">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-terracotta-deep">
-        {eyebrow}
-      </p>
-      <h2 className="mt-3 text-3xl font-bold tracking-tight text-ink sm:text-4xl">{title}</h2>
-      <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-peach to-blush" />
+    <Reveal className="mb-12 flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p className="font-script text-3xl text-terracotta">{eyebrow}</p>
+        <h2 className="mt-1 font-display text-3xl font-medium tracking-tight text-ink sm:text-4xl">
+          {title}
+        </h2>
+      </div>
+      {action}
     </Reveal>
   );
 }

@@ -14,9 +14,9 @@ export default function Navbar({ name }: { name: string }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/60 bg-cream/70 backdrop-blur">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="text-lg font-bold tracking-tight text-ink">
+    <header className="sticky top-0 z-50 border-b border-lavender/70 bg-cream/90 backdrop-blur">
+      <nav className="mx-auto flex max-w-[56rem] items-center justify-between px-6 py-4">
+        <a href="#top" className="font-display text-lg font-semibold tracking-tight text-ink">
           {name}
         </a>
         <ul className="hidden gap-8 text-sm font-medium text-ink/70 sm:flex">
@@ -67,7 +67,7 @@ export default function Navbar({ name }: { name: string }) {
               href={link.href}
               tabIndex={open ? 0 : -1}
               onClick={() => setOpen(false)}
-              className="block rounded-xl px-3 py-3 hover:bg-white/50 hover:text-terracotta-deep"
+              className="block rounded-xl px-3 py-3 hover:bg-peach hover:text-terracotta-deep"
             >
               {link.label}
             </a>

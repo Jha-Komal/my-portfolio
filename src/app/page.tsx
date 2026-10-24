@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
+import Skills, { SkillsBand } from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
@@ -17,6 +17,7 @@ export default function Home() {
       <Navbar name={data.profile.name} />
       <main className="flex-1">
         <Hero profile={data.profile} />
+        <SkillsBand skills={data.skills} />
         <About profile={data.profile} />
         <Skills skills={data.skills} />
         <Projects projects={data.projects} />

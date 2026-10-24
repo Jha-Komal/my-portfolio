@@ -1,11 +1,20 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Caveat, Karla, Montserrat } from "next/font/google";
 import "./globals.css";
 import portfolio from "@/data/portfolio.json";
-import ParallaxTrees from "@/components/ParallaxTrees";
 
-const nunito = Nunito({
-  variable: "--font-nunito",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
+
+const karla = Karla({
+  variable: "--font-karla",
+  subsets: ["latin"],
+});
+
+const caveat = Caveat({
+  variable: "--font-caveat",
   subsets: ["latin"],
 });
 
@@ -22,17 +31,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${nunito.variable} h-full antialiased`}
+      className={`${montserrat.variable} ${karla.variable} ${caveat.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <div className="sky" aria-hidden="true">
-          <span className="cloud cloud-1" />
-          <span className="cloud cloud-2" />
-          <span className="cloud cloud-3" />
-          <ParallaxTrees />
-        </div>
-        {children}
-      </body>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
