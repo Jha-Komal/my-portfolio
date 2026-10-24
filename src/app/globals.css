@@ -195,3 +195,29 @@ html {
     transform: none;
   }
 }
+
+/* Resume sheet and rotating download seal */
+.sheet {
+  background: #fffdf9;
+  border: 1px solid var(--color-lavender);
+  box-shadow: 14px 14px 0 rgba(148, 61, 86, 0.14);
+}
+
+.seal-spin {
+  animation: seal-rotate 22s linear infinite;
+}
+
+.seal:hover .seal-spin,
+.seal:focus-visible .seal-spin {
+  animation-play-state: paused;
+}
+
+@keyframes seal-rotate {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seal-spin {
+    animation: none;
+  }
+}

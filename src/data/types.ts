@@ -39,9 +39,18 @@ export interface Project {
 export interface Experience {
   role: string;
   company: string;
-  location: string;
+  location?: string;
   duration: string;
   highlights: string[];
+}
+
+export interface ResumeData {
+  headline: string;
+  summary: string;
+  projects: { name: string; kind: string; year: string; link: string; summary: string }[];
+  certifications: { name: string; period: string }[];
+  skills: { label: string; items: string }[];
+  education: string;
 }
 
 export interface PortfolioData {
@@ -49,4 +58,5 @@ export interface PortfolioData {
   skills: SkillGroup[];
   projects: Project[];
   experience: Experience[];
+  resume: ResumeData;
 }

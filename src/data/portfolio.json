@@ -190,42 +190,101 @@
   ],
   "experience": [
     {
-      "role": "Digital Product Manager & Co-Founder",
-      "company": "Shyne — Women's Wellness App",
-      "location": "Bengaluru",
-      "duration": "Feb 2026 – Present",
+      "role": "Independent Product & GTM Consultant",
+      "company": "Early-Stage Tech & AI Products",
+      "duration": "Mar 2026 – Oct 2026",
       "highlights": [
-        "Defined product vision from scratch through market analysis, competitor benchmarking (Flo, Clue), and user interviews to identify gaps and define user personas.",
-        "Led MVP prioritization; built low-fidelity wireframes in Balsamiq and high-fidelity designs in Figma; collaborated with the tech team on feature timelines and delivery scope.",
-        "Managed end-to-end product lifecycle from requirements through design handoff and sprint planning — app live on Play Store with 100+ downloads."
+        "Led Shyne, a consumer wellness app, from 16 user interviews to a three-feature MVP and Play Store launch in ~4 months; reached ~160 downloads, 120 registrations and 100 onboarding completions.",
+        "Used Mixpanel feature-usage patterns and qualitative feedback to refine cycle-day flexibility and add manual mood journaling; advised two other early-stage AI products on segmentation, UX and validation."
       ]
     },
     {
-      "role": "Product Manager — CRM & Digital Funnel Systems",
-      "company": "QuantumLeap Learning Solutions",
+      "role": "Product Manager — CRM, Payments & Revenue Systems",
+      "company": "QuantumLeap Learning Solutions Pvt. Ltd.",
       "location": "Bengaluru",
-      "duration": "Jan 2024 – Feb 2026",
+      "duration": "Jan 2025 – Feb 2026",
       "highlights": [
-        "Owned product roadmap for CRM-integrated funnel systems — defined vision, prioritized backlog by revenue impact, authored PRDs and user stories for engineering delivery.",
-        "Generated ₹30–40L incremental monthly revenue, contributing to team revenue of ₹1.5 Cr/month; validated impact and presented to leadership for scale approval.",
-        "Identified critical 90% user drop-off from 300 daily opt-ins to 35 applications via funnel analytics — translated into a structured intervention roadmap.",
-        "Drove 10–15% uplift in daily booked calls by designing reactivation workflows with dialer automation and CRM lead-routing logic.",
-        "Led 0→1 integration of fintech lending partners (Eduvanz, Northern Arc) to resolve core cash collection bottlenecks — defined the user onboarding flow, improving cash collection from 35% to 70%.",
-        "Defined requirements for an AI-powered lead scoring system — designed scoring logic across 14 form fields, specified weightage and verdict output; improved sales follow-up efficiency and drove 10% uplift in conversion."
+        "Product ownership: Proposed the CRM, mapped cross-functional operations and independently owned V1 scope, feature decisions and trade-offs within approved budget and timeline. Prioritized ~25 requirements for 28 internal users.",
+        "Prioritization & execution: Deferred AI integration to protect cost and the 90-day V1 deadline; partnered with design and engineering on lead lifecycle, roles, attribution, payments and dashboards. Led UAT and rollout; retired spreadsheets within ~5 weeks.",
+        "Funnel analytics: Used SQL and funnel analysis to isolate booked-call no-shows; introduced qualification, pre-sales calls and automated reminders. Attendance improved from 65/100 to 92/100 booked calls across before/after periods (no control group).",
+        "Conversion & collections: Lead-to-sale conversion increased from 16% to 26% across observed monthly cohorts after CRM and follow-up changes. Defined credit pre-qualification, lender handoffs and repayment states; cash collected increased from ~35% to ~70% of contract value alongside financing and follow-up changes.",
+        "Financial workflows & AI: Specified GST/TDS-aware invoicing and finance handoffs, reducing turnaround from ~7 days to 1 day. Subsequently introduced OpenAI-assisted lead scoring and pre-call guidance using a 14-question intake and ~1,000 historical transcripts."
       ]
     },
     {
-      "role": "Product Associate — 0→1 Monetization",
-      "company": "QuantumLeap Learning Solutions",
+      "role": "Product Owner — 0 to 1 Product & Monetization",
+      "company": "QuantumLeap Learning Solutions Pvt. Ltd.",
       "location": "Bengaluru",
-      "duration": "Jan 2023 – Jan 2024",
+      "duration": "Jan 2024 – Dec 2024",
       "highlights": [
-        "Led 0→1 discovery and launch of a mid-tier product — defined customer journey, designed pricing tiers, owned conversion tracking from pilot to scale.",
-        "Identified 25–30% drop-off among high-intent leads; validated pricing friction hypothesis through structured customer interviews.",
-        "Designed MVP cohort experiment with offer positioning, pricing tiers, and A/B tracking; operationalized cross-functionally from pilot to scale.",
-        "Built pre-sales engine from scratch — designed lead scoring framework, qualification workflows, and routing logic for a new revenue vertical.",
-        "Trained and managed 4–5 associates; introduced KPI dashboards for pipeline performance and sales visibility."
+        "Synthesized ~60 prospect conversations to identify a scope-price mismatch in an Rs.8–12L flagship; shaped a focused Rs.3L offer for smaller service businesses. Evaluated willingness to pay, alternatives and delivery costs; acquired ~30 paid pilots in 45 days and scaled to ~10 monthly sales (Rs.30L/month).",
+        "Selected an off-the-shelf LMS over a custom build to validate demand with limited engineering investment; considered segment fit and cannibalization when packaging the offer."
+      ]
+    },
+    {
+      "role": "Project Manager — Customer Discovery & Funnel Operations",
+      "company": "QuantumLeap Learning Solutions Pvt. Ltd.",
+      "location": "Bengaluru",
+      "duration": "Jan 2023 – Dec 2023",
+      "highlights": [
+        "Coordinated customer purchase journeys and surfaced recurring objections, affordability constraints and decision friction that informed later CRM, qualification and monetization workflows."
       ]
     }
-  ]
+  ],
+  "resume": {
+    "headline": "Product Manager | Fintech & Growth | 0 to 1 Products, Monetization & Experimentation",
+    "summary": "Product Manager with 3.5+ years across product strategy, customer discovery, growth and delivery. Independently proposed and scoped an internal CRM, owned V1 prioritization and cross-functional execution, and drove measurable funnel and finance workflow improvements. Experienced in 0-to-1 launches, pricing research, SQL-based analysis, user research, experimentation and post-launch iteration.",
+    "projects": [
+      {
+        "name": "Google Photos Retrieval",
+        "kind": "Research & Solution Validation",
+        "year": "2026",
+        "link": "/projects/google-photos-memory-trail",
+        "summary": "Analyzed 10,641 public documents to identify retrieval-friction patterns; combined 31 survey responses and six interviews to prioritize an AI-assisted recovery flow. In seeded-set testing, 3/3 target users recovered their intended photo."
+      },
+      {
+        "name": "Myntra Wishlist Conversion",
+        "kind": "Growth Discovery + MVP",
+        "year": "2026",
+        "link": "/projects/myntra-wishlist",
+        "summary": "Analyzed 2,055 public conversations, 20 survey responses and six interviews; prototyped an AI-assisted comparison flow and defined purchase-conversion, decision-speed and quality guardrails."
+      },
+      {
+        "name": "Blinkit Category Discovery",
+        "kind": "AI Research + Growth Strategy",
+        "year": "2026",
+        "link": "/projects/blinkit-category-discovery",
+        "summary": "Analyzed 3,098+ customer conversations; revised the initial hypothesis toward contextual discovery and defined trial, repeat, GMV and checkout guardrails."
+      }
+    ],
+    "certifications": [
+      {
+        "name": "NextLeap Product Management Fellowship",
+        "period": "Apr 2026 – Sep 2026"
+      }
+    ],
+    "skills": [
+      {
+        "label": "Product",
+        "items": "Product strategy, customer discovery, prioritization, PRDs, user stories, roadmaps, functional specs, acceptance criteria, stakeholder management, UAT, GTM"
+      },
+      {
+        "label": "Agile & Delivery",
+        "items": "Cross-functional execution, Agile/Scrum, Jira, release planning, rollout"
+      },
+      {
+        "label": "Data & Analytics",
+        "items": "SQL, Mixpanel, Google Analytics, funnel analysis, experiment design, KPIs, Excel/Sheets"
+      },
+      {
+        "label": "Fintech & Finance",
+        "items": "Payments, credit pre-qualification, collections, lender workflows, GST/TDS invoicing"
+      },
+      {
+        "label": "Tools",
+        "items": "Figma, Balsamiq, OpenAI API, Claude Code, Codex"
+      }
+    ],
+    "education": "B.A. (Hons.), English | M.N.D. College | 2019–2022"
+  }
 }
