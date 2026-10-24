@@ -2,15 +2,33 @@
   "profile": {
     "name": "Komal Kumari",
     "title": "Product Manager",
-    "tagline": "Growth-focused Digital Product Manager turning customer insights into measurable product outcomes.",
-    "bio": "Growth-focused Digital Product Manager with 3+ years of experience owning product roadmaps, driving end-to-end feature delivery, and translating customer and business insights into measurable outcomes. Launched a women's wellness app from 0→1 and shipped CRM-led digital products at QuantumLeap, defining vision, writing PRDs, prioritizing backlogs, and partnering with engineering in Agile sprint cycles. Proven ability to identify user drop-off through funnel analytics, integrate fintech partners, and scale impact through data-driven iteration.",
+    "tagline": "Product manager turning customer insights into measurable product outcomes.",
+    "bio": "I like to start where a problem actually lives: in customer conversations, in the funnel, and in the small frictions people have stopped noticing. Over three and a half years I've taken products from the first interview to the first release, and I care as much about what we choose not to build as what we ship.\n\nAt QuantumLeap I proposed and scoped an internal CRM, held back AI features to protect a 90-day deadline, and then watched the numbers: booked-call attendance rose from 65 to 92 in a hundred, and lead-to-sale conversion from 16% to 26%, alongside the changes we made. Before that, about sixty prospect conversations revealed a pricing mismatch, and a smaller, sharper offer became thirty paid pilots in forty-five days.\n\nMore recently I've been building on my own: taking Shyne, a women's wellness app, from sixteen user interviews to a Play Store launch in about four months, and writing honest case studies on products I use every day. I do my best work with clear trade-offs, small pieces of real evidence, and teammates who would rather talk it through.",
     "location": "Bengaluru, India",
     "email": "komaljha280120@gmail.com",
     "resumeUrl": "/resume.pdf",
     "social": {
       "github": "https://github.com/Jha-Komal",
       "linkedin": "https://www.linkedin.com/in/komal-kumari-065440234/"
-    }
+    },
+    "principles": [
+      {
+        "title": "Start with people",
+        "body": "Interviews and funnels first, features second. The problem usually looks different up close."
+      },
+      {
+        "title": "Be honest about the evidence",
+        "body": "I say what I know, what I'm guessing, and what hasn't been measured yet."
+      },
+      {
+        "title": "Protect the deadline",
+        "body": "Scope is a decision. I defer what can wait so the first release is one people can use."
+      },
+      {
+        "title": "Measure what matters",
+        "body": "Pick a north-star, then set guardrails so a win in one place doesn't cost trust somewhere else."
+      }
+    ]
   },
   "skills": [
     {
@@ -68,37 +86,106 @@
       "title": "Google Photos: Memory Trail",
       "subtitle": "Product Discovery · AI-Native MVP",
       "description": "Users often remember a moment but not its date, place or details, and stall when the first search fails. Using public-review analysis, a 31-response survey, six task-based interviews and live retrieval replays, I framed the core problem as recovery after a failed first search, then designed Memory Trail: an AI-native concept that keeps clues and near-matches so users narrow results without starting over. In a three-user seeded test, all three recovered their target after the first attempt failed; this is directional evidence, not proof of improved retrieval in real libraries.",
-      "tags": ["Product Discovery", "User Research", "AI-Native MVP", "Search & Discovery"],
+      "tags": [
+        "Product Discovery",
+        "User Research",
+        "AI-Native MVP",
+        "Search & Discovery"
+      ],
       "gradient": "from-blush to-lavender",
-      "link": "https://docs.google.com/presentation/d/12mNxwqFPTn8Cet7wAnNqhGkoUoEzPecThyYjDGBEP2k/edit?usp=sharing",
-      "linkLabel": "View Case Study"
+      "link": "/projects/google-photos-memory-trail",
+      "linkLabel": "Read Case Study",
+      "images": {
+        "main": {
+          "src": "/images/projects/google-photos-main.png",
+          "width": 1358,
+          "height": 753,
+          "alt": "Memory Trail overview: five steps from starting a search to confirming the photo, with the mechanism behind the MVP"
+        },
+        "sub": {
+          "src": "/images/projects/google-photos-sub.png",
+          "width": 144,
+          "height": 301,
+          "alt": "Memory Trail results screen on a phone"
+        }
+      }
     },
     {
       "title": "Blinkit: Contextual Category Discovery",
       "subtitle": "Product Strategy · Growth & Experimentation",
       "description": "Frequent Blinkit shoppers keep buying the same familiar items and rarely explore new categories. I studied the existing discovery surfaces and the friction behind repeat-purchase behaviour, then proposed an AI-powered contextual add-on: it infers the shopper's likely mission from their basket, recommends one relevant item with a clear reason, and lets them accept or ignore it without slowing checkout. The success framework pairs a north-star metric (share of eligible checkouts where a new-category item is bought) with guardrails on checkout time, cart abandonment and relevance.",
-      "tags": ["Product Strategy", "Quick Commerce", "Growth & Experimentation", "AI Recommendations"],
+      "tags": [
+        "Product Strategy",
+        "Quick Commerce",
+        "Growth & Experimentation",
+        "AI Recommendations"
+      ],
       "gradient": "from-peach to-blush",
-      "link": "https://docs.google.com/presentation/d/1T5MaAMLffBdH-_6l5EIKYTt-q_3Nlv40nxDw1gdWedI/edit?usp=sharing",
-      "linkLabel": "View Case Study"
+      "link": "/projects/blinkit-category-discovery",
+      "linkLabel": "Read Case Study",
+      "images": {
+        "main": {
+          "src": "/images/projects/blinkit-main.png",
+          "width": 1357,
+          "height": 759,
+          "alt": "AI-powered contextual add-on for Blinkit: core workflow, key highlights and MVP principle"
+        },
+        "sub": {
+          "src": "/images/projects/blinkit-sub.png",
+          "width": 138,
+          "height": 256,
+          "alt": "Blinkit checkout screen with a single suggested add-on"
+        }
+      }
     },
     {
       "title": "Myntra: Wishlist Conversion",
       "subtitle": "Product Discovery · AI-Powered Product Development",
       "description": "High-intent Myntra shoppers save several products for one need, then stall because the comparison is spread across product pages. I combined an AI analysis of 2,055 public conversations with a 20-person survey and 6 interviews to find the root cause, then proposed Help Me Choose: a Wishlist workspace that resolves a 2–4 item shortlist around the shopper's own priorities, with no discounts. The case study covers prioritization, a metrics hierarchy with guardrails, and an experiment plan; no results are claimed.",
-      "tags": ["Product Discovery", "User Research", "AI-Powered", "Metrics & Experimentation"],
+      "tags": [
+        "Product Discovery",
+        "User Research",
+        "AI-Powered",
+        "Metrics & Experimentation"
+      ],
       "gradient": "from-lavender to-blush",
       "link": "/projects/myntra-wishlist",
-      "linkLabel": "Read Case Study"
+      "linkLabel": "Read Case Study",
+      "images": {
+        "main": {
+          "src": "/images/projects/myntra-main.png",
+          "width": 1363,
+          "height": 762,
+          "alt": "Help Me Choose overview: shortlist, diagnose, resolve and act, with the research behind it"
+        },
+        "sub": {
+          "src": "/images/projects/myntra-sub.png",
+          "width": 190,
+          "height": 382,
+          "alt": "Help Me Choose screen with purchase context and priorities"
+        }
+      }
     },
     {
       "title": "Subspace.money",
       "subtitle": "Product Teardown · May 2026",
       "description": "End-to-end teardown of a consumer fintech app — analysed onboarding flow, payment UX, and post-transaction trust failures across the full user journey. Diagnosed UX trust breakdown (blank post-payment screen, unlabelled wallet deduction) and recommended tiered fixes prioritized by sprint capacity before GTM.",
-      "tags": ["Product Teardown", "Fintech", "UX Audit"],
+      "tags": [
+        "Product Teardown",
+        "Fintech",
+        "UX Audit"
+      ],
       "gradient": "from-peach to-terracotta",
-      "link": "https://docs.google.com/document/d/1ss_E7sWYNpPZlc1K9nEDFtr56SxZZzQD1sZGy5-knRY/edit?tab=t.0",
-      "linkLabel": "Read Teardown"
+      "link": "/projects/subspace-teardown",
+      "linkLabel": "Read Teardown",
+      "images": {
+        "main": {
+          "src": "/images/projects/subspace-main.png",
+          "width": 1913,
+          "height": 971,
+          "alt": "Subspace.money app home screen showing gift card categories and trending subscriptions"
+        }
+      }
     }
   ],
   "experience": [
